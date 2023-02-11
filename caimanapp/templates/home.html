@@ -1,6 +1,8 @@
+{% load static %}
 <!DOCTYPE html>
 <!-- === Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +13,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static '\css\style.css' %}">
 
     <!--<title>Login & Registration Form</title>-->
 </head>
@@ -107,7 +109,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="{% static '\js\script.js' %}"></script>
 </body>
 
 </html>
