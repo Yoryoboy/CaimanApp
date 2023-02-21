@@ -26,6 +26,7 @@ body {
     opacity: 0.5;
     filter: blur(77px);
     border-radius: 50%;
+    z-index: -1;
 }
 
 .bigCircle {
@@ -38,6 +39,7 @@ body {
     opacity: 0.7;
     filter: blur(77.5px);
     border-radius: 50%;
+    z-index: -1;
 }
 
 .container {
@@ -214,11 +216,367 @@ input:focus::placeholder {
 
 
 
-/* .button input:hover {
-    background-color: #265df2;
-} */
 
 .form .login-signup {
     margin-top: 30px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100%;
+
+    }
+
+    .dashContainer {
+        display: flex;
+        padding: 0px 16px;
+        padding-top: 24px;
+        justify-content: space-between;
+
+
+
+    }
+
+    .usrContainer {
+        width: 197px;
+        height: 52px;
+    }
+
+    .usrContDet {
+        display: flex;
+        width: 197px;
+        height: 52px;
+    }
+
+    .usrImg {
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .usrName {
+        color: #FAFAFA;
+        padding-left: 14px;
+
+    }
+
+    .menuCont {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+        width: 44.07px;
+        height: 44.07px;
+        background: #161024;
+        border-radius: 12px;
+    }
+
+    .uil-bars {
+        color: #FAFAFA;
+        transform: scale(1.9);
+
+    }
+
+    .searchContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 29px 17px
+    }
+
+
+    .searchBar {
+        display: flex;
+        align-items: center;
+        padding: 6px 12px;
+        width: 100%;
+        height: 44px;
+        background: #161024;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+    }
+
+
+    .searchInput {
+        border: none;
+        flex: 1;
+        font-size: 12px;
+        padding: 12px;
+        height: 44px;
+        background: transparent;
+        line-height: 14px;
+        font-weight: 400;
+
+    }
+
+
+    button {
+        background: linear-gradient(95.57deg, #DD8272 44.54%, #D8756E 60.7%);
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        width: 36px;
+        height: 36px;
+        border: none;
+        color: #fff;
+    }
+
+    .uil-search {
+        font-size: 16px;
+    }
+
+    .container2 {
+        background-image: url('../images/frame_54.png');
+        background-size: cover;
+        background-position: center;
+        height: 146px;
+        width: -webkit-fill-available;
+        margin-left: 16px;
+        margin-right: 16px;
+        border-radius: 12px;
+
+
+    }
+
+
+
+    .contentContainer2 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
+        border-radius: 12px;
+        height: 100%;
+        gap: 2px;
+
+
+    }
+
+    .contentContainer2 h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .contentContainer2 p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .contentContainer2 input {
+        background: linear-gradient(95.57deg, #DD8272 44.54%, #D8756E 60.7%);
+        width: 295px;
+        height: 36px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        color: #FAFAFA;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 12px;
+
+    }
+
+    .container3 {
+        display: flex;
+        padding: 0px;
+        gap: 16px;
+        width: 380px;
+        height: 102px;
+        justify-content: space-between;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 26px;
+
+    }
+
+    .contentContainer3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .contentContainer3 img {
+        width: 163.5px;
+        height: 78px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+
+    }
+
+    .contentContainer3 h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 14px;
+        color: #FFFFFF;
+        margin-top: 10px;
+    }
+
+    .container4 {
+
+        width: 380px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 29px;
+
+    }
+
+    .container4 h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+
+    }
+
+    .nextMatchCont4 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 12px;
+        padding: 12px 16px;
+        width: 100%;
+        background: #3C2E5A;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+    }
+
+    .nextMatchCont4 .innerCont {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .innerCont div {
+        display: flex;
+        align-items: center;
+    }
+
+    .nextMatchCont4 p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        color: #FAFAFA;
+        margin-left: 4.5px;
+    }
+
+    .nextMatchCont4 .innerCont:first-child {
+        margin-bottom: 12px;
+    }
+
+
+
+
+    .innerCont .uil {
+        font-size: 11.97px;
+        color: #FAFAFA;
+
+    }
+
+
+
+    .nextMatchCont4 div h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FAFAFA;
+        width: inherit;
+    }
+
+    .container4Inputs {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .container4Inputs input {
+        background: linear-gradient(95.57deg, #DD8272 44.54%, #D8756E 60.7%);
+        width: 149px;
+        height: 36px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        color: #FAFAFA;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+
+    }
+
+    .recentAct {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 12px;
+        padding: 12px 16px;
+        width: 100%;
+        background: transparent;
+        border-bottom: 1px solid #3C2E5A;
+    }
+
+    .recentAct::after {
+        content: "";
+    }
+
+
+    .recentAct .innerCont2 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .recentAct .innerCont2 p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        margin-left: 8px;
+    }
+
+    .innerCont2 .uil-comment-info-alt {
+        font-size: 16px;
+        color: #FFCC00;
+        transform: scale(1.3);
+    }
+
+    .innerCont2 .uil-comment-heart {
+        font-size: 16px;
+        color: #06C270;
+        transform: scale(1.3);
+    }
+
+
 }
